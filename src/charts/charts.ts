@@ -72,7 +72,8 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit {
           this.updateChartData(changes['datasets'].currentValue);
         }
 
-        this.chart.update();
+        //this.chart.update();
+        this.refresh();
       } else {
       // otherwise rebuild the chart
         this.refresh();
