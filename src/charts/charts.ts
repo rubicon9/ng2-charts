@@ -177,7 +177,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit {
     return datasets;
   }
 
-  private refresh():any {
+  public refresh():any {
     // if (this.options && this.options.responsive) {
     //   setTimeout(() => this.refresh(), 50);
     // }
